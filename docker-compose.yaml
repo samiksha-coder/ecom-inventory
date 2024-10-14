@@ -1,0 +1,10 @@
+services:
+  ecom-inventory-pg-db:
+    image: postgres
+    container_name: ecom-inventory-pg-db
+    environment:
+      POSTGRES_USER: inventory-app-db
+      POSTGRES_PASSWORD: inventory-app-db
+      POSTGRES_DB: inventory-app-db
+    ports:
+      - "5434:5432"
